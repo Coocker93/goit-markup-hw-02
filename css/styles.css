@@ -22,6 +22,7 @@ body {font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color:var(--primary-text-color);
+    margin-right: 76px;
 }
 
 .accent{
@@ -48,7 +49,7 @@ body {font-family: 'Roboto', sans-serif;
 
 .header-mail:hover, .header-mail:focus {
     color: var(--accent-color);
-    ;
+
 }
 
 .header-tel{
@@ -59,12 +60,24 @@ body {font-family: 'Roboto', sans-serif;
     list-style: none;
 }
 
+.nav-list {
+    display: flex;
+    gap: 40px;
+}
+
+.header-navigation {
+    display: flex;
+    margin-right: auto;
+    align-items: center;
+}
+
 .header-nav {
 font-weight: 500;
 font-size: 16px;
 line-height: 1.33;
 letter-spacing: 0.02em;
 color:var(--primary-text-color);
+
 }
 
 .header-nav.current{
@@ -95,16 +108,21 @@ line-height: 1.33;
 letter-spacing: 0.04em;
 color: var(--accent-color);
 cursor: pointer;
+padding: 12px 24px;
+border: 1px solid #E7E9FC;
+border-radius: 4px;
 }
 
 .list-button:hover, .list-button:focus{
     background-color: var(--accent-color);
     color:var(--hero-text-color) ;
+    padding: 12px 24px;
 }
 
 .list-button.primary{
     color:var(--hero-text-color);
     background-color: var(--primary-button-color);
+    padding: 12px 24px;
 }
 
 
@@ -123,12 +141,13 @@ cursor: pointer;
    margin: -1px;
 }
 
-.services-title {
+.range-list-title {
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color:var(--primary-text-color);
+padding-top: 32px;
 }
 
 .services-text {
@@ -136,18 +155,36 @@ color:var(--primary-text-color);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--paragraph-text-color);
+    padding-top: 8px;
 }
 
-/*Footer*/
-.footer {
-background-color: var(--primary-text-color);
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
+
+.services-list-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 16px;
+    gap: 8px;
+}
+
+
+/*Footer*/
+
 
 .footer-paragraph {
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--title-text-color);
+padding-top: 16px;
+width: 264px;
 }
 
 .logo-footer{
@@ -157,6 +194,7 @@ color: var(--title-text-color);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color:var(--team-background-color);
+    padding-bottom: 16px;
 }
 
 .logo-footer{
@@ -176,6 +214,9 @@ text-align: center;
 letter-spacing: 0.02em;
 color: var(--hero-text-color);
 background-color: var(--primary-text-color);
+width: 507px;
+padding-bottom: 48px;
+margin: 0 auto;
 }
 
 .hero-button{
@@ -189,10 +230,25 @@ letter-spacing: 0.04em;
 color: var(--hero-text-color);
 background-color: var(--accent-color);
 cursor: pointer;
+margin:0 auto;
+padding: 16px 32px;
+border-radius: 4px;
+border-color: var(--accent-color);
+border-right-color: var(--accent-color);
+}
+
+.hero-wrap {
+    padding-bottom: 120px;
+    padding-top: 188px;
+}
+
+.section-title{
+    background-color: var(--primary-text-color);;
 }
 
 .hero-button:hover, .hero-button:focus{
     background-color: var(--primary-button-color);
+    border-color:  var(--primary-button-color);
 }
 
 .hero-sub-title{
@@ -200,22 +256,45 @@ cursor: pointer;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.hero {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.hero-list {
+    padding-bottom: 72px;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    justify-content: center;
+}
+
+.hero-item {
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+
 }
 
 .paragraph-title{
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: var(--paragraph-text-color);
-}
+    font-weight: 400;
+    font-size: 16px;
+    line-height:1.5;
+    letter-spacing: 0.02em;
+    color:var(--paragraph-text-color)
+    }
+
 
 .services-title {
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
+    padding-bottom: 72px;
+    text-align: center;
 }
 
 .team-title{
@@ -225,23 +304,150 @@ line-height: 1.11;
 text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
+padding-top: 120px;
+padding-bottom: 72px;
+background-color: var(--team-background-color);
 }
 
 .team-list{
     background-color: var(--team-background-color);
+    display: flex;
+    justify-content: center;
+    gap: 24px;
 }
+
 
 .team-item {
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
+margin-bottom: 8px;
 }
 
 .team-position{
 
 font-size: 16px;
-line-height: 1,5;
+line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--paragraph-text-color);
+padding-bottom: 32px;
 }
+
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.advantages-list {
+    display: flex;
+}
+
+.monitor-list{
+    padding-right: 24px;
+    display: flex;
+    gap: 24px;
+}
+
+
+.webstudio-items {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.services-section {
+    padding-bottom: 120px;
+}
+
+.container-nav {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    align-items : center;
+    
+}
+
+.header {
+    border-bottom: 1px solid #E7E9FC;
+}
+
+
+.address-list {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    gap: 40px;
+}
+
+
+.portfolio-images {
+    padding-top: 48px;
+    padding-left: 24px;
+    padding-right: 25px;
+    padding-bottom: 48px;
+}
+
+.services-item {
+    border-bottom: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+    border-left: 1px solid #E7E9FC;
+}
+
+.container-item{
+    margin-right: 24px;
+}
+
+.container-item:nth-child(3){
+    margin-right: 0;
+}
+
+.team-item-wrap {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+border-radius: 0px 0px 4px 4px;
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    
+}
+
+.team-image-item{
+    background-color: #FFFFFF;
+}
+
+.team-wrap{
+    background-color: var(--team-background-color);
+    padding-bottom: 120px
+}
+.footer-wrap{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer{
+    background-color: var(--primary-text-color);
+}
+
+
