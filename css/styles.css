@@ -40,11 +40,17 @@ body {font-family: 'Roboto', sans-serif;
 
 .header-nav {
     text-decoration: none;
+    transition-property: var(--accent-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .header-mail {
     text-decoration: none;
+    transition-property: var(--accent-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-mail:hover, .header-mail:focus {
@@ -54,6 +60,13 @@ body {font-family: 'Roboto', sans-serif;
 
 .header-tel{
     text-decoration: none;
+    transition-property: var(--accent-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-tel:hover, .header-tel:focus {
+    color: var(--accent-color);
 }
 
 .list {
@@ -84,6 +97,24 @@ color:var(--primary-text-color);
     color: var(--accent-color);
 }
 
+
+.position {
+    position: relative;
+    
+}
+
+.header-nav.current::after{
+content: '';
+position: absolute;
+width: 100%;
+height: 4px;
+left: 0px;
+top: 48px;
+background: #404BBF;
+border-radius: 2px;
+margin-top:-5px;
+}
+
 .header-mail {
     font-style: normal;
     font-size: 16px;
@@ -111,6 +142,9 @@ cursor: pointer;
 padding: 12px 24px;
 border: 1px solid #E7E9FC;
 border-radius: 4px;
+transition-property: var(--accent-color);
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-button:hover, .list-button:focus{
@@ -242,6 +276,9 @@ padding: 16px 32px;
 border-radius: 4px;
 border-color: var(--accent-color);
 border-right-color: var(--accent-color);
+transition-property: var(--accent-color);
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -384,6 +421,9 @@ margin-bottom: 72px;
     height: 88px;
     border: 1px solid #8e8f99;
     border-radius: 4px;
+    transition-property: #404bbf;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company-icon-link {
@@ -392,6 +432,11 @@ margin-bottom: 72px;
     align-items: center;
     width: 100%;
     height: 100%; 
+}
+
+.use-icon {
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .use-icon {
@@ -480,6 +525,8 @@ img {
 
 .services-item-unit{
     display: block;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .services-item-unit:hover{
@@ -551,6 +598,8 @@ border-radius: 0px 0px 4px 4px;
     justify-content: center;
     align-items: center;
     background-color: var(--accent-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -599,6 +648,8 @@ margin-bottom: 16px;
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.1);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -616,5 +667,51 @@ margin-bottom: 16px;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 120px;
+}
 
+.backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#2E2F4266;
+    transition: opacity 300ms linear, visibility 300ms linear;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(360deg);
+    width: 408px;
+    min-height: 576px;
+    background-color: #FCFCFC;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 24px;
+    transition: transform 500ms linear;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) rotate(0);
+}
+
+.modal-close {
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: #E7E9FC;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    padding: 0;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
