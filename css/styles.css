@@ -742,6 +742,6 @@ transition: transform 300ms linear;
 transform: translateY(0);
 }
 
-.services-item:focus .services-cover-text{
+.services-item:focus{
     transform: translateY(0);
 }
