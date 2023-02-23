@@ -179,10 +179,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    margin: -1px;
 }
 
-a {
-    text-decoration: none;
-}
-
 .range-list-title {
 font-weight: 500;
 font-size: 20px;
@@ -534,6 +530,7 @@ img {
     display: block;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
 }
 
 .services-item-unit:hover{
@@ -716,6 +713,20 @@ margin-bottom: 16px;
     margin-left: auto;
     padding: 0;
     margin-bottom: 24px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover{
+    background: #404BBF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+fill: #E7E9FC;
+}
+
+.modal-close:focus{
+    background: #404BBF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+fill: #E7E9FC;
 }
 
 .is-hidden {
@@ -824,6 +835,7 @@ color: #8E8F99;
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    margin-bottom: 16px;
 }
 
 
@@ -850,4 +862,50 @@ color: #8E8F99;
     width: 169px;
     height: 56px;
     border-color: transparent;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.modal-button:hover {
+    background-color: #404BBF;
+}
+
+.check-text {
+    font-weight: 400;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.04em;
+color: #757575;
+display: flex;
+align-items: flex-end;
+}
+
+.check-text::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 1.25px solid #2E2F42;
+    border-radius: 2px;
+    margin-right: 8px;
+}
+
+.input-check:checked + .check-text::before {
+    background-color: #404BBF;
+    border: none;
+    background-image: url(../images/check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.input-check:focus + .check-text::before {
+    border-color:#404BBF;
+}
+
+.check-box {
+    margin-bottom: 24px;
+}
+
+.policy-link {
+    padding-left: 4px;
 }
