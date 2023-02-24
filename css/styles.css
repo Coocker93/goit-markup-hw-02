@@ -836,6 +836,14 @@ color: #8E8F99;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     margin-bottom: 16px;
+    
+}
+
+.modal-message:focus{
+    border-color: var(--accent-color);
+    outline: none;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -939,7 +947,18 @@ padding: 16px 8px;
     min-width: 165px;
     height: 40px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
     transform: translateY(100%);
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-button:hover, .footer-button:focus {
+    background-color: #404BBF;
+
 }
 
 .subscribe-wrap {
@@ -947,7 +966,6 @@ padding: 16px 8px;
     margin-left: auto;
     gap: 24px;
 }
-
 
 
 
