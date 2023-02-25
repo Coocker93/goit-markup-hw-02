@@ -524,6 +524,7 @@ img {
     border: 1px solid #E7E9FC;
     width: calc((100% - 48px) / 3);
     position: relative;
+    cursor: pointer;
 }
 
 .services-item-unit{
@@ -670,7 +671,10 @@ margin-bottom: 16px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 120px;
+}
+
+.webstudio-logo {
+    margin-right: 120px;
 }
 
 .backdrop {
@@ -692,7 +696,7 @@ margin-bottom: 16px;
     background-color: #FCFCFC;
     border-radius: 4px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    padding: 24px;
+    padding: 72px 24px;
     transition: transform 500ms linear;
 }
 
@@ -707,12 +711,10 @@ margin-bottom: 16px;
     border-radius: 50%;
     background-color: #E7E9FC;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
+    position: absolute;
+    left: 88%;
+    top: 24px;
     padding: 0;
-    margin-bottom: 24px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -776,7 +778,7 @@ margin-bottom: 16px;
 
 .modal-input {
 width: 360px;
-height: 58px;
+height: 40px;
 background: #FCFCFC;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
@@ -786,7 +788,7 @@ font-size: 12px;
 line-height: 1.16px;
 letter-spacing: 0.04em;
 color: #8E8F99;
-padding-left: 38px;
+padding-left: 30px;
 outline: transparent;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -809,8 +811,8 @@ color: #8E8F99;
 .modal-icon {
     position: absolute;
     left: 16px;
-    top: 50px;
-    transform: translatey(-50%);
+    bottom: 35px;
+    transform: translate(-50%);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -933,6 +935,8 @@ background-color: #2E2F42;
 padding: 16px 8px;
 }
 
+
+
 .footer-button {
     padding: 8px 24px;
     background-color: #4D5AE5;
@@ -962,8 +966,11 @@ padding: 16px 8px;
 }
 
 .subscribe-wrap {
-    display: flex;
     margin-left: auto;
+}
+
+.footer-form {
+    display: flex;
     gap: 24px;
 }
 
