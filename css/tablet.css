@@ -1,0 +1,66 @@
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+    .team-list {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       row-gap: 64px;
+       column-gap: 24px;
+    }
+    .team-wrap {
+        padding-bottom: 104px;
+}
+
+    .company-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+        justify-content: center;
+    }
+
+    .advantages-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+    .webtudio-logo {
+        margin-bottom: 0;
+    }
+
+    .email-footer {
+        width: 260px;
+    }
+
+    .soc-media {
+       display: flex;
+       align-self: baseline;
+       margin-top: 0;
+    }
+
+    .subscribe-wrap {
+        margin-top: 0;
+        margin-right: 50px;
+    }
+
+    .footer-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+    }
+
+    .footer-button {
+        transform: translateY(100%);
+    }
+}
