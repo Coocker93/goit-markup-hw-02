@@ -32,20 +32,55 @@
             </ul>
         </address>
         </div>
-        <button type="button" class="menu-open">
+        <button type="button" class="menu-open" data-menu-open>
             <svg width="29" height="18">
                 <use href="./images/symbol-defs-close.svg#hamburger"></use>
             </svg>
         </button>
+        <div class="mob-menu" data-menu>
+            <div class="container">
+                <div>
+            <button type="button" class="mob-close" data-menu-close>
+                <svg class="modal-close-icon" width="8" height="8">
+                <use href="./images/symbol-defs-close.svg#icon-close-black"></use>
+            </svg></button>
+            <ul class="mob-list list">
+                <li class="mob-list-item"><a href="./images/Contacts.jpg" class="mob-nav">Studio</a></li>
+                <li class="mob-list-item"><a href="./portfolio.html" class="mob-nav">Portfolio</a></li>
+                <li class="mob-list-item"><a href="./images/Contacts.jpg" class="mob-nav current">Contacts</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="list mob-address-list">
+                <li class="cell-tel"><a href="tel:+110001111111" class="mob-tel current">+11 (000) 111-11-11</a></li>
+                <li><a href="mailto:info@devstudio.com" class="mob-mail">info@devstudio.com</a></li>
+            </ul>
+            <ul class="list mob-social-list">
+                <li class="team-social-item"><a href="" class="team-social-link link"> <svg class="social-icon-color" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg></a></li>
+                <li class="team-social-item"><a href="" class="team-social-link link"> <svg class="social-icon-color" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg></a></li>
+                <li class="team-social-item"><a href="" class="team-social-link link"> <svg class="social-icon-color" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg></a></li>
+                <li class="team-social-item"><a href="" class="team-social-link link"> <svg class="social-icon-color" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg></a></li>
+            </ul>
+        </div>
+    </div>
+        </div>
     </header>
-    <main>
+    <main> 
       <section class="section-title">
             <div class="container hero-container">
             <h1 class="hero-title"> Effective Solutions for Your Business </h1>
             <button data-modal-open type="button" class="hero-button">Order Service</button>
             </div>
         </section>
-        <!--
+        
       <section class="webstudio-items">
             <div class="container">
             <h2 class="visually-hidden">Advantages of WebStudio</h2>
@@ -103,7 +138,7 @@
             </ul>
         </div>
         </section>
-        <!--
+        
         <section class="team-section">
             <div class="container">
                 <div class="team-wrap">
@@ -284,7 +319,7 @@
         </form>
     </div> 
     </footer>
-    <!--
+    
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close>
@@ -331,6 +366,7 @@
             </form>
         </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
