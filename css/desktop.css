@@ -65,11 +65,11 @@
 
     .webstudio-logo{
         margin-right: 120px;
+        margin-left: auto;
     }
 
     .subscribe-wrap {
         margin-left: auto;
-        margin-right: 0;
     }
 
     .footer-button {
@@ -216,6 +216,11 @@ margin-top:-5px;
 }
 .address-wrap{
     margin: 0;
+}
+
+.hero-container{
+    padding-bottom: 188px;
+    padding-top: 188px;
 }
 }
     

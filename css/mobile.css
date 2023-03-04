@@ -10,5 +10,17 @@
     .menu-open {
         left:88%;
     }
-}
 
+    .hero-title {
+        font-size: 36px;
+        width:320px;
+    }
+
+    .email-footer {
+        width: 398px;
+    }
+
+    .footer-button {
+        transform: translateX(65%);
+    }
+}

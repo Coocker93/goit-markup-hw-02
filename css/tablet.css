@@ -45,7 +45,7 @@
 
     .soc-media {
        display: flex;
-       align-self: baseline;
+       align-items: baseline;
        margin-top: 0;
     }
 
@@ -168,7 +168,6 @@
 
     .address-wrap {
         margin-top: 24px;
-        margin-right: 16px;
     }
 
     
@@ -185,6 +184,24 @@
         display: none;
     }
 
-    
+    .hero-container{
+        padding-bottom: 108px;
+        padding-top: 111px;
+    }
 
+    .hero-title {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 0.93;
+        width: 496px;
+    }
+
+    .logo-footer {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .media-title {
+        justify-content: flex-start;
+    }
 }
