@@ -606,12 +606,13 @@ margin-bottom: 16px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(360deg);
-    width: 408px;
-    min-height: 576px;
+    width: 220px;
+    min-height: 400px;
     background-color: #FCFCFC;
     border-radius: 4px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    padding: 72px 24px;
+    padding: 60px 24px;
+    padding-bottom: 24px;
     transition: transform 500ms linear;
 }
 
@@ -620,14 +621,14 @@ margin-bottom: 16px;
 }
 
 .modal-close {
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-color: #E7E9FC;
     cursor: pointer;
     position: absolute;
-    left: 88%;
+    left: 85%;
     top: 24px;
     padding: 0;
     transition-duration: 250ms;
@@ -682,8 +683,8 @@ transform: translateY(0);
 }
 
 .modal-title {
-font-weight: 500;
-font-size: 16px;
+font-weight: 400;
+font-size: 13px;
 line-height: 1.5;
 color: #2E2F42;
 text-align: center;
@@ -692,7 +693,7 @@ margin-bottom: 16px;
 }
 
 .modal-input {
-width: 360px;
+width: 180px;
 height: 40px;
 background: #FCFCFC;
 border: 1px solid rgba(33, 33, 33, 0.2);
@@ -705,13 +706,11 @@ letter-spacing: 0.04em;
 color: #8E8F99;
 padding-left: 30px;
 outline: transparent;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-title {
 font-weight: 400;
-font-size: 12px;
+font-size: 9px;
 line-height: 1.16;
 display: inline-block;
 margin-bottom: 4px;
@@ -741,14 +740,14 @@ color: #8E8F99;
 }
 
 .modal-message{
-    width: 360px;
+    width: 180px;
     height: 120px;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 9px;
     line-height: 14px;
     letter-spacing: 0.04em;
     color: rgba(117, 117, 117, 0.5);
-    padding:8px 16px;
+    padding:8px;
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -784,8 +783,8 @@ color: #8E8F99;
     color: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    width: 169px;
-    height: 56px;
+    width: 109px;
+    height: 40px;
     border-color: transparent;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -798,21 +797,23 @@ color: #8E8F99;
 
 .check-text {
     font-weight: 400;
-font-size: 12px;
+font-size: 8px;
 line-height: 1.16;
 letter-spacing: 0.04em;
 color: #757575;
 display: flex;
-align-items: flex-end;
+flex-shrink: 0;
+align-items: center;
 }
 
 .check-text::before {
     content: '';
     width: 16px;
-    height: 16px;
+    height: 12px;
     border: 1.25px solid #2E2F42;
     border-radius: 2px;
     margin-right: 8px;
+    
 }
 
 .input-check:checked + .check-text::before {
@@ -832,7 +833,14 @@ align-items: flex-end;
 }
 
 .policy-link {
-    padding-left: 4px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 8px;
+line-height: 1.16;
+text-align: justify;
+letter-spacing: 0.04em;
+    
 }
 
 .email-footer {
@@ -848,6 +856,8 @@ width: 300px;
 Height:40px;
 background-color: #2E2F42;
 padding: 16px 8px;
+position: relative;
+
 }
 
 
@@ -880,6 +890,8 @@ padding: 16px 8px;
 
 .subscribe-wrap {
     margin-top: 72px;
+    position: relative;
+
 }
 
 .footer-form {
@@ -890,9 +902,11 @@ padding: 16px 8px;
 
 .mob-menu {
     position: fixed;
+    overflow-y: auto;
+    z-index: 1;
     top: 0;
     right: 0;
-    width: 428px;
+    width: 100%;
     height: 796px;
     background-color: #FFFFFF;
     padding-top: 24px;
@@ -942,7 +956,7 @@ display: block;
 .mob-tel {
 text-decoration: none;
 font-weight: 700;
-font-size: 36px;
+font-size: 25px;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
@@ -963,7 +977,7 @@ text-transform: capitalize;
 .mob-social-list {
     display: flex;
     justify-content: center;
-    gap: 56px;
+    gap: 30px;
 }
 
 .mob-mail {
@@ -980,6 +994,5 @@ color: #434455;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: auto;
 }
 

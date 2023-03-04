@@ -41,6 +41,8 @@
 
     .email-footer {
         width: 260px;
+        position: relative;
+        z-index: 0;
     }
 
     .soc-media {
@@ -62,6 +64,8 @@
 
     .footer-button {
         transform: translateY(100%);
+        position: relative;
+        z-index: 0;
     }
 
     .header-nav:hover, .header-nav:focus {
@@ -203,5 +207,13 @@
     
     .media-title {
         justify-content: flex-start;
+    }
+
+    .modal {
+        width: 408px;
+    }
+
+    .mob-menu {
+        display: none;
     }
 }

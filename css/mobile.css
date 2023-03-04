@@ -23,4 +23,64 @@
     .footer-button {
         transform: translateX(65%);
     }
+
+    .modal {
+        width: 408px;
+        min-height: 586px;
+        padding: 72px 24px;
+    }
+
+    .modal-input {
+        width: 360px;
+        height: 40px;
+    }
+
+    .modal-message {
+        width: 360px;
+        padding:8px 16px;
+    }
+
+    .modal-title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .input-title {
+        font-size: 12px;  
+    }
+
+    .modal-message{
+        font-size: 12px;
+    }
+
+    .modal-close {
+        width: 24px;
+        height: 24px;
+        left: 88%;
+        top: 29px;
+    }
+
+    .modal-button {
+        width: 169px;
+        height: 56px;
+    }
+
+    .check-text::before {
+        content: '';
+        width: 16px;
+        height: 16px;
+        border: 1.25px solid #2E2F42;
+        border-radius: 2px;
+        margin-right: 8px;
+    }
+
+    .check-text {
+        font-size: 12px;
+    }
+
+    .policy-link {
+        font-size: 12px;
+        padding-left: 4px;
+    }
 }
