@@ -75,14 +75,12 @@
         </div>
     </header>
     <main> 
-    
       <section class="section-title">
             <div class="container hero-container">
             <h1 class="hero-title"> Effective Solutions for Your Business </h1>
             <button data-modal-open type="button" class="hero-button">Order Service</button>
             </div>
         </section>
-        
       <section class="webstudio-items">
             <div class="container">
             <h2 class="visually-hidden">Advantages of WebStudio</h2>
@@ -134,20 +132,23 @@
             <div class="container">
             <h2 class="services-title">What are we doing</h2>
             <ul class="list monitor-list">
-                <li><img src="./images/Monitor.jpg" alt="Monitor" width="360"></li>
-                <li><img src="./images/Phones.jpg" alt="Phones" width="360"></li>
-                <li><img src="./images/PC-and-phone-sync.jpg" alt="PC and Phone Sync" width="360"></li>
+                <li><img srcset="./images/Monitor.jpg 1x, ./images/services-picture-1-2x.jpg 2x"
+                    src="./images/Monitor.jpg" alt="Monitor" width="360"></li>
+                <li><img srcset="./images/Phones.jpg 1x, ./images/services-picture-2-2x.jpg 2x"
+                    src="./images/Phones.jpg" alt="Phones" width="360"></li>
+                <li><img srcset="./images/PC-and-phone-sync.jpg 1x, ./images/services-picture-3-2x.jpg 2x"
+                    src="./images/PC-and-phone-sync.jpg" alt="PC and Phone Sync" width="360"></li>
             </ul>
         </div>
-        </section>
-        
+        </section>  
         <section class="team-section">
             <div class="container">
                 <div class="team-wrap">
             <h2 class="team-title">Our Team</h2>
             <ul class="list team-list">
                 <li class="team-image-item">
-                    <img src="./images/mark.jpg" alt="Mark" width="264">
+                    <img srcset="./images/mark.jpg 1x, ./images/img-team-desktop-1-2x.jpg 2x"
+                    src="./images/mark.jpg" alt="Mark" width="264">
                     <div class="team-item-wrap">
                     <h3 class="team-item">Mark Guerrero</h3>
                     <p class="team-position">Product Designer</p>
@@ -167,7 +168,9 @@
                     </ul>
                     </div>
                 </li>
-                <li class="team-image-item"> <img src="./images/tom.jpg" alt="Tom" width="264">
+                <li class="team-image-item">
+                    <img srcset="./images/tom.jpg 1x, ./images/img-team-desktop-2-2x.jpg 2x"
+                    src="./images/tom.jpg" alt="Tom" width="264">
                     <div class="team-item-wrap">
                     <h3 class="team-item">Tom Ford</h3>
                     <p class="team-position">Frontend Developer</p>
@@ -187,7 +190,9 @@
                     </ul>
                     </div>
                 </li>
-                <li class="team-image-item"><img src="./images/camila.jpg" alt="Camila" width="264">
+                <li class="team-image-item">
+                    <img srcset="./images/camila.jpg 1x, ./images/img-team-desktop-3-2x.jpg 2x"
+                    src="./images/camila.jpg" alt="Camila" width="264">
                     <div class="team-item-wrap">
                     <h3 class="team-item">Camila Garcia</h3>
                     <p class="team-position">Marketing</p>
@@ -208,7 +213,8 @@
                     </div>
                 </li>
                 <li class="team-image-item">
-                    <img src="./images/daniel.jpg" alt="Daniel" width="264">
+                    <img srcset="./images/daniel.jpg, ./images/img-team-desktop-4-2x.jpg 2x"
+                    src="./images/daniel.jpg" alt="Daniel" width="264">
                     <div class="team-item-wrap">
                     <h3 class="team-item">Daniel Wilson</h3>
                     <p class="team-position">UI Designer</p>
@@ -311,14 +317,13 @@
         <strong class="media-title">Subscribe</strong>
         <input type="email" placeholder="E-mail" name="subscribe" class="email-footer" required>
     </div>
-    
         <button type="submit" class="footer-button">Subscribe
             <svg width="24px" height="24">
                 <use class="frame-icon" href="./images/symbol-defs (moda).svg#icon-Frame-3-1"></use>
                 </svg>
             </button>
-        </div>
         </form>
+        </div>
     </div> 
     </footer>
     <div class="backdrop is-hidden" data-modal>

@@ -99,6 +99,7 @@
 
 .monitor-list{
     display: flex;
+    justify-content: center;
     gap: 24px;
 }
 
@@ -222,5 +223,21 @@ margin-top:-5px;
     padding-bottom: 188px;
     padding-top: 188px;
 }
+
+.section-title {
+    background-image: linear-gradient(to right,
+rgba(46, 47, 66, 0.7),
+rgba(46, 47, 66, 0.7)), url(../images/people-office\-1.jpg);
 }
-    
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .section-title {
+    background-image: linear-gradient(to right,
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-desktop-2x.jpg);
+  }
+}
+
+}

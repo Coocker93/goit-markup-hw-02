@@ -83,4 +83,10 @@
         font-size: 12px;
         padding-left: 4px;
     }
+
+    .hero-button {
+        padding: 16px 32px;
+        font-size: 16px;
+    }
+
 }
