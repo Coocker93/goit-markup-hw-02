@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
+    <link rel="stylesheet" href="./css/desktop.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -17,7 +20,7 @@
         <nav class="header-navigation">
             <ul class="list nav-list">
                 <li><a href="./index.html" class="header-nav">Studio</a></li>
-                <li><a href="./portfolio.html" class="header-nav current position">Portfolio</a></li>
+                <li><a href="./portfolio.html" class="header-nav-special current position">Portfolio</a></li>
                 <li><a href="./images/Contacts.jpg" class="header-nav">Contacts</a></li>
             </ul>
         </nav>
@@ -28,6 +31,47 @@
             </ul>
         </address>
         </div>
+        <button type="button" class="menu-open" data-menu-open>
+            <svg width="29" height="18">
+                <use href="./images/symbol-defs-close.svg#hamburger"></use>
+            </svg>
+        </button>
+        <div class="mob-menu is-hidden" data-menu>
+            <div class="container">
+                <div>
+            <button type="button" class="mob-close" data-menu-close>
+                <svg class="modal-close-icon" width="8" height="8">
+                <use href="./images/symbol-defs-close.svg#icon-close-black"></use>
+            </svg></button>
+            <ul class="mob-list list">
+                <li class="mob-list-item"><a href="./images/Contacts.jpg" class="mob-nav">Studio</a></li>
+                <li class="mob-list-item"><a href="./portfolio.html" class="mob-nav">Portfolio</a></li>
+                <li class="mob-list-item"><a href="./images/Contacts.jpg" class="mob-nav current">Contacts</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="list mob-address-list">
+                <li class="cell-tel"><a href="tel:+110001111111" class="mob-tel current">+11 (000) 111-11-11</a></li>
+                <li><a href="mailto:info@devstudio.com" class="mob-mail">info@devstudio.com</a></li>
+            </ul>
+            <ul class="list mob-social-list">
+                <li class="team-social-item"><a href="" class="team-social-link link"> <svg class="social-icon-color" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg></a></li>
+                <li class="team-social-item"><a href="" class="team-social-link link"> <svg class="social-icon-color" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg></a></li>
+                <li class="team-social-item"><a href="" class="team-social-link link"> <svg class="social-icon-color" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg></a></li>
+                <li class="team-social-item"><a href="" class="team-social-link link"> <svg class="social-icon-color" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg></a></li>
+            </ul>
+        </div>
+    </div>
+        </div>
+
     </header>
     <main>
         <section class="hero">
@@ -191,5 +235,6 @@
     </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
