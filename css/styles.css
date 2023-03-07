@@ -186,12 +186,12 @@ width: 264px;
 /*Main Page*/
 
 .hero-title {
-font-size: 20px;
+font-size: 36px;
 line-height: 1.11;
 text-align: center;
 letter-spacing: 0.02em;
 color: var(--hero-text-color);
-width: 290px;
+width: 320px;
 margin: 0 auto;
 }
 
@@ -556,7 +556,6 @@ margin-bottom: 16px;
 .soc-media {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-top: 72px;
 }
 
@@ -632,18 +631,27 @@ margin-bottom: 16px;
 }
 
 .modal-close {
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-color: #E7E9FC;
     cursor: pointer;
     position: absolute;
     left: 85%;
-    top: 24px;
-    padding: 0;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    top: 29px;
+}
+
+.modal-close-item {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+
+.modal-close-icon {
+    position: absolute;
+    top: 7px;
+    left: 7px;
 }
 
 .modal-close:hover{
@@ -918,7 +926,7 @@ position: relative;
     top: 0;
     right: 0;
     width: 100%;
-    height: 796px;
+    height: 100%;
     background-color: #FFFFFF;
     padding-top: 24px;
     padding-bottom: 40px;
@@ -936,9 +944,6 @@ position: relative;
     position: absolute;
     left: 88%;
     top: 24px;
-    padding: 0;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mob-nav {
@@ -1012,7 +1017,7 @@ color: #434455;
     color: var(--accent-color);
 }
 
-.mob-menu .container {
+.mob-container {
     height: 100%;
     display: flex;
     flex-direction: column;

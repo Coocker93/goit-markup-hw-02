@@ -1,6 +1,6 @@
 @media screen and (min-width: 1200px) {
     .container {
-        max-width: 1440px;
+        max-width: 1158px;
     }
 
     .team-list {
@@ -69,7 +69,8 @@
     }
 
     .subscribe-wrap {
-        margin-left: auto;
+        margin-left: 80px;
+        margin-right: 0;
     }
 
     .footer-button {

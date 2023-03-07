@@ -228,9 +228,6 @@
         justify-content: flex-start;
     }
 
-    .modal {
-        width: 408px;
-    }
 
     .mob-menu {
         display: none;

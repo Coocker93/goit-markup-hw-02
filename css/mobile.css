@@ -11,10 +11,7 @@
         left:88%;
     }
 
-    .hero-title {
-        font-size: 36px;
-        width:320px;
-    }
+   
 
     .email-footer {
         width: 398px;
@@ -54,12 +51,6 @@
         font-size: 12px;
     }
 
-    .modal-close {
-        width: 24px;
-        height: 24px;
-        left: 88%;
-        top: 29px;
-    }
 
     .modal-button {
         width: 169px;
