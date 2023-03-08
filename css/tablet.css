@@ -78,6 +78,11 @@
         transition-property: var(--accent-color);
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.33;
+        letter-spacing: 0.02em;
+        color:var(--primary-text-color);
     }
     
     
@@ -116,14 +121,7 @@
         align-items: center;
     }
     
-    .header-nav {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.33;
-    letter-spacing: 0.02em;
-    color:var(--primary-text-color);
     
-    }
     
     .header-nav.current{
         color: var(--accent-color);
@@ -132,6 +130,12 @@
     .header-nav-special {
         color: var(--accent-color);
         text-decoration: none;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.33;
+        letter-spacing: 0.02em
     }
 
     .header-nav-special.current::after{

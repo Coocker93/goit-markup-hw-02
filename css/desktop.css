@@ -258,7 +258,6 @@ rgba(46, 47, 66, 0.7)), url(../images/people-office\-1.jpg);
     width: 360px;
     height: 420px;
 }
-
 .header-nav-special.current::after{
     content: '';
     position: absolute;

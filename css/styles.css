@@ -640,6 +640,7 @@ margin-bottom: 16px;
     position: absolute;
     left: 85%;
     top: 29px;
+    padding: 0;
 }
 
 .modal-close-item {
